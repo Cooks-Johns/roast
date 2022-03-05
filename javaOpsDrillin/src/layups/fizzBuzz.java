@@ -3,28 +3,18 @@ package layups;
 
 public class fizzBuzz {
 
-    static void fizzle(Integer n) {
-        for (int i = 1; i <= n; i++) {
+   public static void fizzleUp( Integer start, Integer max, Integer num1, Integer num2) {
+        for (int i = start; i <= max; i++) {
 
-            if(i % 3 == 0 && i % 5 == 0) {
-                System.out.println("FizzBuzz" + i);
-            }else if(i % 3 == 0) {
-                System.out.println("Fizz");
+            if(i % num1 == 0 && i % num2 == 0) {
+                System.out.println("FizzBuzz " + i + "\n");
+            }else if(i % num1 == 0) {
+                System.out.println("Fizz " + i + "\n");
             } else {
-                System.out.print("Buzz");
+                System.out.print("Buzz " + i + "\n");
             }
-        }
+        }C:\Users\12109\OneDrive - SNHU\Documents\myStuff
     }
 
-
-
-
-    private static void main(String args[]){
-     
-     
-
-    }
-
-    
 
 }
