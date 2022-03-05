@@ -7,7 +7,7 @@ Welcome to my little weekend study session
 The workspace contains two folders by default, where:
 
 - `src`: the folder to maintain sources
-- `layups`: the folder to maintain dependencies
+- `layups`: the folder to maintain the fib
 
 
 ## Dependency Management
