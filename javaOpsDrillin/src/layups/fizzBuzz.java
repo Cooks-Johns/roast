@@ -13,7 +13,7 @@ public class fizzBuzz {
             } else {
                 System.out.print("Buzz " + i + "\n");
             }
-        }C:\Users\12109\OneDrive - SNHU\Documents\myStuff
+        }
     }
 
 
