@@ -17,7 +17,10 @@ public class HomeController {
         return String.format("Your test %s", name);
     }
 
-
+    @GetMapping("/bootstrap-testing")
+    public String strap() {
+        return "bootstrap-testing";
+    }
 
 // ToDo Page--> home
     @GetMapping("/home")
