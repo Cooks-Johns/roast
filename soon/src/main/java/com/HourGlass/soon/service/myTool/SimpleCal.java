@@ -22,13 +22,8 @@ public class SimpleCal {
         String betaInt = scan.nextLine();
         double dubBeta = Double.parseDouble(betaInt);
 
-        System.out.println("__________________________ \n");
-        System.out.println("What would you like to do? \n" +
-                            "1) Add \n" +
-                            "2) Subtract \n" +
-                            "3) Multiply \n" +
-                            "4) \n" +
-                            "5) \n");
+        menu();
+
         String work = scan.nextLine();
         String main = work;
 
@@ -51,6 +46,17 @@ public class SimpleCal {
 
     }
 
+
+
+    private static void menu() {
+        System.out.println("__________________________ \n");
+        System.out.println("What would you like to do? \n" +
+                            "1) Add \n" +
+                            "2) Subtract \n" +
+                            "3) Multiply \n" +
+                            "4) \n" +
+                            "5) \n");
+    }
 
 
 }
