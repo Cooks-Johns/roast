@@ -1,5 +1,7 @@
 package com.HourGlass.soon.service.myTool.study;
 
+import org.springframework.format.annotation.NumberFormat;
+
 import java.util.Scanner;
 
 public class OverLoadMe {
@@ -10,8 +12,12 @@ public class OverLoadMe {
     public static void main(String[] args) { // main method that is calling two different methods
 
         //  Each method is depened on the next
-        mainInputsWithPrint();
+       // mainInputsWithPrint();
 
+        // Testing
+        OverLoadMe testAnnotations = new OverLoadMe();
+
+        testAnnotations.displaay();
 
     }
 
@@ -65,5 +71,20 @@ public class OverLoadMe {
     }
 
 
+    /// ----    TESTING
+
+    public void displaay() {
+        System.out.println("Dropping the base display()!!! ");
+    }
+
+
+    class Derived extends OverLoadMe {
+
+        @NumberFormat
+        public void display(int x) {
+            System.out.println("Now we have the display(int)");
+        }
+
+    }
 
 }
