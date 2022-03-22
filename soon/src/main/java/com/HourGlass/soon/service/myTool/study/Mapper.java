@@ -2,9 +2,12 @@ package com.HourGlass.soon.service.myTool.study;
 
 import java.util.HashMap;
 
+import com.HourGlass.soon.service.myTool.study.make.*;
+
 public class Mapper {
 
     public static void main(String[] args) {
+
 
 
         HashMap<String, Integer> emplIds = getStringIntegerHashMap();
