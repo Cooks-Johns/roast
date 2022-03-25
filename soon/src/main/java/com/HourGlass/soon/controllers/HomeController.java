@@ -29,10 +29,16 @@ public class HomeController {
     }
 
 
+    // Todo js drills with spring
+    @GetMapping("/testScripts")
+    public String testScripts() {return "testScripts";}
+
 // ToDo Page--> countdown
 
 // ToDo Page--> contact
     // ToDo --> about us
+
+
 
 
 
