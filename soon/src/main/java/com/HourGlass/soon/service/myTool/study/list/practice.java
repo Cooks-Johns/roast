@@ -4,11 +4,44 @@ package com.HourGlass.soon.service.myTool.study.list;
 // a Singly Linked List
 public class practice {
 
+
+    // Driver code
+    public static void main(String[] args)
+    {
+        /* Start with the empty list. */
+        makeAList();
+    }
+
     Node head; // head of list
+
+
 
     // Linked list Node.
     // This inner class is made static
     // so that main() can access it
+
+    private static void makeAList() {
+        practice list = new practice();
+
+        //
+        // ******INSERTION******
+        //
+
+        // Insert the values
+        list = insert(list, 1);
+        list = insert(list, 2);
+        list = insert(list, 3);
+        list = insert(list, 4);
+        list = insert(list, 5);
+        list = insert(list, 6);
+        list = insert(list, 7);
+        list = insert(list, 8);
+
+        // Print the LinkedList
+        printList(list);
+    }
+
+
     static class Node {
 
         int data;
@@ -67,27 +100,7 @@ public class practice {
         }
     }
 
-    // Driver code
-    public static void main(String[] args)
-    {
-        /* Start with the empty list. */
-        practice list = new practice();
 
-        //
-        // ******INSERTION******
-        //
 
-        // Insert the values
-        list = insert(list, 1);
-        list = insert(list, 2);
-        list = insert(list, 3);
-        list = insert(list, 4);
-        list = insert(list, 5);
-        list = insert(list, 6);
-        list = insert(list, 7);
-        list = insert(list, 8);
 
-        // Print the LinkedList
-        printList(list);
-    }
 }
